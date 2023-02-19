@@ -1,7 +1,7 @@
-##Mind Meld
+## Mind Meld
 Mind Meld is a Substrate-based web application that enables parents, schools, and coaches to sign smart contracts for extracurricular activities.
 
-##Technical Details
+## Technical Details
 Mind Meld is built using the Rust programming language and the Substrate framework. It uses the Polkadot network for its consensus mechanism and stores data on-chain using the Substrate storage system.
 
 
@@ -14,7 +14,7 @@ To use Mind Meld, follow these steps:
 > Wait for the school and the coach to sign the form.
 > Once all parties have signed the form, the contract is executed and the student is allowed to participate in the extracurricular activity.
 
-  +------------+       +-------------------+       +--------------+
+  ```+------------+       +-------------------+       +--------------+
   |            |       |                   |       |              |
   |   Parent   |       |      School       |       |   Coach      |
   |            |       |                   |       |              |
@@ -64,7 +64,7 @@ To use Mind Meld, follow these steps:
         |                      |                          |
         |                      |                          |
         |                      |                          |
-        +----------------------+                          |****
+        +----------------------+                          |```
 
 The swimlane diagram shows the different parties involved in the process: the parent/guardian, the school, and the coach. Here are the steps involved in the process:
 
