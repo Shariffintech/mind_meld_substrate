@@ -1,5 +1,95 @@
-# Substrate Node Template
+##Mind Meld
+Mind Meld is a Substrate-based web application that enables parents, schools, and coaches to sign smart contracts for extracurricular activities.
 
+##Technical Details
+Mind Meld is built using the Rust programming language and the Substrate framework. It uses the Polkadot network for its consensus mechanism and stores data on-chain using the Substrate storage system.
+
+
+To use Mind Meld, follow these steps:
+
+> Access the application at shariftarver.com/mindmeld
+> Select the extracurricular activity in which the student wishes to participate.
+> Fill in the necessary information such as medical and emergency contact information, and the code of conduct.
+> Sign the smart contract form.
+> Wait for the school and the coach to sign the form.
+> Once all parties have signed the form, the contract is executed and the student is allowed to participate in the extracurricular activity.
+
+  +------------+       +-------------------+       +--------------+
+  |            |       |                   |       |              |
+  |   Parent   |       |      School       |       |   Coach      |
+  |            |       |                   |       |              |
+  +-----+------+       +--------+----------+       +------+-------+
+        |                      |                          |
+        | 1. Request contract  |                          |
+        | -------------------->|                          |
+        |                      |                          |
+        |                      |2. Generate contract form |
+        |                      |<-------------------------|
+        |                      |                          |
+        |                      |3. Send contract form     |
+        |                      |------------------------>|
+        |                      |                          |
+        | 4. Review and sign   |                          |
+        |<---------------------|                          |
+        |                      |                          |
+        |5. Send contract form |                          |
+        |--------------------->|                          |
+        |                      |6. Review and sign       |
+        |                      |<------------------------|
+        |7. Contract executed  |                          |
+        |<---------------------|                          |
+        |                      |                          |
+        |                      |                          |
+        |8. Participate in     |                          |
+        |   extracurricular    |                          |
+        |   activity           |                          |
+        |                      |                          |
+        |                      |                          |
+        |                      |                          |
+        |9. Submit medical and |                          |
+        |   emergency contact  |                          |
+        |   information        |                          |
+        |                      |                          |
+        +----------------------+                          |
+        |                                                 |
+        |10. Verify medical and                           |
+        |    emergency contact                             |
+        |    information                                   |
+        |<-------------------------------------------------|
+        |                                                 |
+        |                      |                          |
+        |11. Participation     |                          |
+        |    confirmed         |                          |
+        |--------------------->|                          |
+        |                      |                          |
+        |                      |                          |
+        |                      |                          |
+        +----------------------+                          |****
+
+The swimlane diagram shows the different parties involved in the process: the parent/guardian, the school, and the coach. Here are the steps involved in the process:
+
+Step 1: The parent requests a contract for their child to participate in an extracurricular activity.
+Step 2: The school generates a contract form that includes the necessary information such as medical and emergency contact information, and the code of conduct.
+Step 3: The school sends the contract form to the parent for review and signature.
+Step 4: The parent reviews and signs the contract form.
+Step 5: The parent sends the signed contract form to the school.
+Step 6: The school reviews and signs the contract form.
+Step 7: The contract is executed.
+Step 8: The student participates in the extracurricular activity.
+Step 9: The parent submits medical and emergency contact information.
+Step 10: The school verifies the medical and emergency contact information.
+Step 11: The coach confirms the student's participation.
+
+
+Screenshots
+Here are some suggested areas for screenshots:
+
+The landing page where the extracurricular activities are listed
+The form for filling in the necessary information
+The signature page where the parent can sign the form
+The signature page where the school and the coach can sign the form
+The executed contract page where the student is allowed to participate in the extracurricular activity.
+# Substrate Node Template
 [![Try on playground](https://img.shields.io/badge/Playground-Node_Template-brightgreen?logo=Parity%20Substrate)](https://docs.substrate.io/playground/) [![Matrix](https://img.shields.io/matrix/substrate-technical:matrix.org)](https://matrix.to/#/#substrate-technical:matrix.org)
 
 A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
