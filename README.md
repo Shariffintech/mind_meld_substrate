@@ -64,7 +64,8 @@ To use Mind Meld, follow these steps:
         |                      |                          |
         |                      |                          |
         |                      |                          |
-        +----------------------+                          |```
+        +----------------------+                          |
+   ```
 
 The swimlane diagram shows the different parties involved in the process: the parent/guardian, the school, and the coach. Here are the steps involved in the process:
 
